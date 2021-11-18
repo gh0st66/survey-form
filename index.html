@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+<div class="container"></div>
+    <header class="header">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to complete the survey.</p>
+    </header>
+  <form id="survey-form">
+        <div class="form-group">
+        <label id="name-label"for="name">Name</label>
+        <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+        />
+    </div>
+    <div class="form-group">
+        <label id="email-label"for="email">Email</label>
+        <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your email"
+        required
+        />
+    </div>
+    <div class="form-group">
+        <label for="number" id="number-label">Ages <span class="clue">(Optional)</span></label>
+        <input type="number"
+        name="number"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+        />
+    </div>
+    <div class="form-group">
+        <p>Where are you in your studies currently?</p>
+        <select name="role" id="dropdown" class="form-control" required>
+            <option disabled selected value>Select current level</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Pro">Pro</option>
+            <option value="Teacher">Teacher</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <p>Would you reccomened software engineering to friends?</p>
+        <label>
+            <input
+            name="user-recommend"
+            value="100%"
+            type="radio"
+            class="input-radio"
+            checked/>100%
+        </label>
+        <label>
+            <input
+            name="user-recommend"
+            value="Only if they are interested"
+            type="radio"
+            class="input-radio"
+            />Only if they are interested
+        </label>
+        <label>
+            <input
+            name="user-recommend"
+            value="I don't think so"
+            type="radio"
+            class="input-radio"
+            />I don't think so
+        </label>
+        <label>
+            <input
+            name="user-recommend"
+            value="NO"
+            type="radio"
+            class="input-radio"
+            />NO
+        </label>
+    </div>
+    <div class="form-group">
+        <p>What langauges do you love?
+            <span class="clue">(Check all that apply</span>
+        </p>
+        <label>
+            <input
+            name="prefer"
+            value="JavaScript"
+             type="checkbox"
+             class="input-checkbox"
+             />JavaScript
+        </label>
+        <label>
+            <input
+            name="prefer"
+            value="Python"
+             type="checkbox"
+             class="input-checkbox"
+             />Python
+        </label>
+        <label>
+            <input
+            name="prefer"
+            value="Java"
+             type="checkbox"
+             class="input-checkbox"
+             />Java
+        </label>
+        <label>
+            <input
+            name="prefer"
+            value="C++"
+             type="checkbox"
+             class="input-checkbox"
+             />c++
+        </label>
+        <label>
+            <input
+            name="prefer"
+            value="Ruby"
+             type="checkbox"
+             class="input-checkbox"
+             />Ruby
+        </label>
+        <label>
+            <input
+            name="prefer"
+            value="C"
+             type="checkbox"
+             class="input-checkbox"
+             />C
+        </label>
+        <label>
+            <input
+            name="prefer"
+            value="C#"
+             type="checkbox"
+             class="input-checkbox"
+             />C#
+        </label>
+        <label>
+            <input
+            name="prefer"
+            value="GO"
+             type="checkbox"
+             class="input-checkbox"
+             />GO
+        </label>
+    </div>
+    <div class="form-group">
+        <p>Please leave any other freedback here</p>
+        <textarea
+         name="comment"
+         id="comments"
+         class="input-textarea"
+         placeholder="Enter feedback here!"></textarea>
+    </div>
+    <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+            Submit
+        </button>
+    </div>
+  </form>
+</div>
+
+
+
+</body>
+</html>

@@ -1,9 +1,236 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
+:root {
+    --color-deepred: #de354c;
+    --color-brightred: #932432;
+    --color-purepurp: rgba(112,25,100,0.8);
+    --color-purpgrey: #283747;
+    --color-cloud: #f3f3f3;
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
 }
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-cloud);
+    margin: 0;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-purpgrey);
+    background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://images.pexels.com/photos/288477/pexels-photo-288477.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+h1,
+p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+    margin: 0;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+}
+
+button {
+    border: none;
+}
+
+.container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+
+  .header {
+    padding: 0 0.625rem;
+    margin-bottom: 1.9rem;
+  }
+
+  #description {
+      font-style: italic;
+      font-weight: 200;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  }
+
+  .clue {
+      margin-left: 0.5rem;
+      font-size: 0.9rem;
+      color: #e4e4e4;
+  }
+
+  .text-center {
+      text-align: center;
+  }
+
+  form {
+      background: var(--color-purepurp);
+      padding: 2.5rem 0.7rem;
+      border-radius: 2.5rem;
+  }
+
+  @media (min-width: 480px) {
+    form {
+      padding: 2.5rem;
+    }
+  }
+
+  .form-group {
+      margin: 0 auto 1.275rem auto;
+      padding: 0.5rem;
+  }
+
+ .form-control {
+     display: block;
+     width: 100%;
+     height: 2.4rem;
+     padding: 0.38rem 0.8rem;
+     color: #495057;
+     background-color: #fff;
+     background-clip: padding-box;
+     border: 1px solid #ced4da;
+     border-radius: 0.25rem;
+     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+ }
+
+ .form-control:focus {
+     border-color: #80bdff;
+     outline: 0;
+     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+ }
+
+ .input-radio,
+ .input-checkbox {
+     display: inline-block;
+     margin-right: 0.75;
+     min-height: 1.25rem;
+     min-width: 1.25rem;
+ }
+
+ .input-textarea {
+     min-height: 120px;
+     width: 100%;
+     padding: 0.675rem;
+     resize: vertical;
+ }
+
+ .submit-button {
+     display: block;
+     width: 100%;
+     padding: 0.75rem;
+    background: var(--color-brightred);
+    color: inherit;
+    cursor: pointer;
+    border-radius: 15px;
+ }
+
+ .footer {
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 15px;
+    font-size: 25px;
+    }
+
+    .fa-github {
+        color: var(--color-brightred);
+        font-size: 24px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .fa-linkedin {
+        color: var(--color-brightred);
+        font-size: 24px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .fa-stack-overflow {
+        color: var(--color-brightred);
+        font-size: 24px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .fa-angellist{
+        color: var(--color-brightred);
+        font-size: 24px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .fa-github:hover {
+        transform: rotate(180deg) scale(1.7);
+    }
+
+    .fa-linkedin:hover {
+        transform: rotate(180deg) scale(1.7);
+    }
+
+    .fa-stack-overflow:hover {
+        transform: rotate(180deg) scale(1.7);
+    }
+
+    .fa-angellist:hover {
+        transform: rotate(180deg) scale(1.7);
+    }

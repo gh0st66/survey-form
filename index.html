@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.css"/>
     <link rel="stylesheet" href="style.css">
     <title>Survey Form</title>
 </head>
 <body>
-<div class="container"></div>
+<div class="container">
     <header class="header">
-        <h1 id="title">Survey Form</h1>
-        <p id="description">Thank you for taking the time to complete the survey.</p>
+        <h1 id="title" class="text-center">Survey Form</h1>
+        <p id="description" class="description text-center">Thank you for taking the time to complete the survey.</p>
     </header>
   <form id="survey-form">
         <div class="form-group">
@@ -37,7 +39,7 @@
         />
     </div>
     <div class="form-group">
-        <label for="number" id="number-label">Ages <span class="clue">(Optional)</span></label>
+        <label for="number" id="number-label">Age <span class="clue">(Optional)</span></label>
         <input type="number"
         name="number"
         id="number"
@@ -162,7 +164,7 @@
         </label>
     </div>
     <div class="form-group">
-        <p>Please leave any other freedback here</p>
+        <p>Please leave any other feedback here</p>
         <textarea
          name="comment"
          id="comments"
@@ -176,6 +178,22 @@
     </div>
   </form>
 </div>
+<footer class="footer">
+    <p>created by Johnny L</p>
+    <a href="https://github.com/gh0st66" target="blank">
+        <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/johnny-levelle-7b3816141/" target="blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://stackoverflow.com/users/17260261/johnny-l" target="blank">
+        <i class="fab fa-stack-overflow"></i>
+    </a>
+    <a href="https://angel.co/u/johnny-levelle" target="blank">
+        <i class="fab fa-angellist"></i>
+    </a>
+</footer>
+
 
 
 
